@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vasa Consulting - Expert US Tax & Financial Consulting by Shubham Vasa, Enrolled Agent">
-    <title>Vasa Consulting - Expert US Tax & Financial Consulting</title>
+    <meta name="description" content="Eagle Tax Partners - Expert US Tax & Financial Consulting by Shubham Vasa, Enrolled Agent">
+    <title>Eagle Tax Partners - Expert US Tax & Financial Consulting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-blue: #0A2342;
-            --accent-gold: #D9A404;
-            --light-bg: #F0F2F5;
+            --primary-blue: #002868;
+            --accent-gold: #BF9B30;
+            --light-bg: #F5F5F5;
             --white: #FFFFFF;
-            --text-dark: #333333;
+            --text-dark: #1a1a1a;
             --text-gray: #555555;
             --border-gray: #E0E0E0;
+            --eagle-red: #BF0A30;
         }
 
         * {
@@ -69,6 +70,13 @@
             font-weight: 700;
             color: var(--primary-blue);
             font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-eagle {
+            font-size: 2rem;
         }
 
         .logo span {
@@ -93,11 +101,28 @@
         }
 
         #home {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, #1a4d7a 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #003d82 100%);
             color: var(--white);
             padding: 150px 0 100px;
             margin-top: 70px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #home::before {
+            content: '🦅';
+            position: absolute;
+            font-size: 20rem;
+            opacity: 0.05;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
 
         .hero-content h1 {
@@ -122,13 +147,13 @@
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(217, 164, 4, 0.3);
+            box-shadow: 0 4px 15px rgba(191, 155, 48, 0.3);
         }
 
         .cta-button:hover {
-            background: #f0b804;
+            background: #d4a933;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(217, 164, 4, 0.4);
+            box-shadow: 0 6px 20px rgba(191, 155, 48, 0.4);
         }
 
         section {
@@ -219,11 +244,13 @@
             text-align: center;
             transition: all 0.3s;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid transparent;
         }
 
         .service-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            border-top-color: var(--accent-gold);
         }
 
         .service-icon {
@@ -454,7 +481,10 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Vasa <span>Consulting</span></div>
+                <div class="logo">
+                    <span class="logo-eagle">🦅</span>
+                    <span>Eagle Tax <span>Partners</span></span>
+                </div>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -478,15 +508,15 @@
 
     <section id="about">
         <div class="container">
-            <h2>About Shubham Vasa</h2>
+            <h2>About Shubham Vasa, EA</h2>
             <p class="section-subtitle">Your Trusted Partner in Tax Excellence</p>
             <div class="about-content">
                 <div class="about-image">SV</div>
                 <div class="about-text">
-                    <h3>Shubham Vasa, EA</h3>
-                    <p>Welcome to Vasa Consulting. I'm Shubham Vasa, a federally authorized Enrolled Agent with a passion for helping individuals and businesses navigate the complexities of US taxation with confidence and clarity.</p>
+                    <h3>Founder & Principal, Eagle Tax Partners</h3>
+                    <p>Welcome to Eagle Tax Partners. I'm Shubham Vasa, a federally authorized Enrolled Agent with a passion for helping individuals and businesses navigate the complexities of US taxation with confidence and clarity.</p>
                     <p>As an Enrolled Agent, I hold the highest credential awarded by the IRS, granting me unlimited rights to represent taxpayers before the Internal Revenue Service. My expertise spans individual tax preparation, business tax strategy, IRS representation, and international tax advisory.</p>
-                    <p>My mission is simple: to provide personalized, strategic tax solutions that protect your interests, maximize your benefits, and ensure full compliance with federal tax laws. Whether you're facing an IRS audit, planning for business growth, or seeking expert guidance on complex tax matters, I'm here to help.</p>
+                    <p>At Eagle Tax Partners, our mission is simple: to provide personalized, strategic tax solutions that protect your interests, maximize your benefits, and ensure full compliance with federal tax laws. Whether you're facing an IRS audit, planning for business growth, or seeking expert guidance on complex tax matters, we're here to help.</p>
                     <div class="credentials">
                         <strong>Credentials:</strong> US Enrolled Agent (EA) | IRS Authorized Representative
                     </div>
@@ -526,23 +556,23 @@
 
     <section id="why-us">
         <div class="container">
-            <h2>Why Choose Vasa Consulting</h2>
+            <h2>Why Choose Eagle Tax Partners</h2>
             <p class="section-subtitle">Experience the Difference of Working with a Federally Authorized Tax Expert</p>
             <div class="features-grid">
                 <div class="feature-item">
-                    <div class="feature-icon">✓</div>
+                    <div class="feature-icon">🦅</div>
                     <h3>Federally Authorized Expertise</h3>
-                    <p>As an Enrolled Agent, I hold the highest credential awarded by the IRS, with unlimited rights to represent you before the federal tax authority.</p>
+                    <p>As an Enrolled Agent, we hold the highest credential awarded by the IRS, with unlimited rights to represent you before the federal tax authority.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">🎯</div>
                     <h3>Personalized Client Strategy</h3>
-                    <p>Every client is unique. I provide customized tax strategies tailored to your specific financial situation, goals, and challenges.</p>
+                    <p>Every client is unique. We provide customized tax strategies tailored to your specific financial situation, goals, and challenges.</p>
                 </div>
                 <div class="feature-item">
                     <div class="feature-icon">⚡</div>
                     <h3>Modern, Efficient Process</h3>
-                    <p>Leveraging the latest technology and best practices, I deliver fast, accurate, and secure tax services with transparent communication every step of the way.</p>
+                    <p>Leveraging the latest technology and best practices, we deliver fast, accurate, and secure tax services with transparent communication every step of the way.</p>
                 </div>
             </div>
         </div>
@@ -573,7 +603,7 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <h3>📧 Email</h3>
-                        <p><a href="mailto:contact@vasaconsulting.com">contact@vasaconsulting.com</a></p>
+                        <p><a href="mailto:contact@eagletaxpartners.com">contact@eagletaxpartners.com</a></p>
                     </div>
                     <div class="contact-item">
                         <h3>📞 Phone</h3>
@@ -590,7 +620,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Vasa Consulting. All Rights Reserved. | Shubham Vasa, Enrolled Agent</p>
+            <p>&copy; 2024 Eagle Tax Partners. All Rights Reserved. | Shubham Vasa, Enrolled Agent</p>
         </div>
     </footer>
 </body>
